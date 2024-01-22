@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #034C6C;
+    --green: #0D9346;
+    --yellow: #FFD66B;
+    --orange: #FF8F6B;
+    --blue: #233C7A;
+}
+
+.cash-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 15px 0;
+}
+
+header h4 span {
+    color: var(--mainColor)
+}
+
+.menu-side {
+    box-shadow: 1px 1px 6px 0 hwb(174deg 0% 59% / 20%);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.active {
+    background-color: var(--mainColor) !important;
+}
+.active svg{ 
+    stroke: #fff !important;
+}
+
+footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
