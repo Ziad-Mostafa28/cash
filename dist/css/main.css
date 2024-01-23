@@ -48,3 +48,17 @@ footer p {
     align-items: center;
     gap: 10px;
 }
+
+/* //////////////////////// Hello page  //////////////////////////////// */
+.Login_Form img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.Login_Form .Login_Form_right {
+    padding: 0 10rem;
+}
+
+.Login_Form_right h2 {
+    text-align: center;
+}
