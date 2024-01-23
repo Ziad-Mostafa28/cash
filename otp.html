@@ -19,7 +19,7 @@
                 </div>
                 <div class="OTP_Form_right ">
                     <div class="pt-lg-5">
-                        <h2> مرحبا بك </h2>
+                        <h2 class="fw-bold"> مرحبا بك </h2>
                         <div class="mt-4 OTP_Form_data">
                             <div class="name_user mb-4">
                                 <label class="label">
@@ -30,17 +30,23 @@
 
                                 </label>
                                 <div id="inputs" class="inputs">
-                                    <input class="input" type="text"
+                                    <input class="input" type="text" 
+                                    id="input1" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text" 
+                                    id="input2" oninput="checkInputs()"
                                         inputmode="numeric" maxlength="1" placeholder=""/>
                                     <input class="input" type="text"
+                                    id="input3" oninput="checkInputs()"
                                         inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text"
+                                    <input class="input" type="text" 
+                                    id="input4" oninput="checkInputs()"
                                         inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text"
+                                    <input class="input" type="text" 
+                                    id="input5" oninput="checkInputs()"
                                         inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text"
+                                    <input class="input" type="text" 
+                                    id="input6" oninput="checkInputs()"
                                         inputmode="numeric" maxlength="1" placeholder=""/>
                                 </div>
                             </div>
@@ -52,7 +58,7 @@
                                 <u class="remove_password"> إعادة إرسال </u>
                             </a>
 
-                            <button class="sub_btn mt-5" type="submit"> تاكيد </button>
+                            <button class="sub_btn mt-5 inactive" type="submit" id="submitButton" value="" disabled> تاكيد </button>
 
                         </div>
                     </div>
