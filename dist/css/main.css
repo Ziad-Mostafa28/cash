@@ -2,17 +2,18 @@
     font-family: cairo;
     src: url('../fonts/cairo/Cairo-all-wight.ttf');
 }
+ 
 
-* {
+ * {
     margin: 0;
     padding: 0;
 }
 
-body {
+ body{
     font-family: cairo;
 }
 
-:root {
+ :root {
     --mainColor: #034C6C;
     --green: #0D9346;
     --yellow: #FFD66B;
@@ -51,11 +52,13 @@ header h4 span {
 }
 
 .active svg {
+     stroke: #fff !important;
+ 
     /* stroke: #fff !important; */
-}
+ }
 
 footer {
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     text-align: center;
 }
 
@@ -66,6 +69,52 @@ footer p {
     gap: 10px;
 }
 
+ /* //////////////////////// login page  //////////////////////////////// */
+
+
+@media screen and (max-width:1024px) {
+    .Login_Form .Login_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+ 
+}
+@media screen and (max-width:769px) {
+
+    .Login_Form .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .Login_Form .Login_Form_image,
+    .Login_Form .Login_Form_right {
+        width: 100% !important;
+    }
+    .Login_Form .Login_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+    }
+
+    .Login_Form {
+        flex-direction: column;
+    }
+    .OTP_Form_right {
+        justify-content: normal !important;
+    }
+
+
+}
+@media screen and (max-width:440px){
+    .left_image {
+        height: 100% !important;
+    }
+}
+.left_image {
+=======
 /* //////////////////////Dashboard//////////////////////// */
 .menu-side {
     box-shadow: 1px 1px 6px 0 hwb(174deg 0% 59% / 20%);
@@ -157,15 +206,553 @@ table tbody td{
 
 /* //////////////////////// Hello page  //////////////////////////////// */
 .Login_Form img {
+ 
     height: 100vh;
     width: 100%;
     object-fit: cover;
 }
 
+
+ 
 .Login_Form .Login_Form_right {
+    width: 50%;
     padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .Login_Form_right h2 {
     text-align: center;
+    color: var(--mainColor);
+}
+
+.Login_Form_data {
+    text-align: right;
+}
+
+.Login_Form_right .First_p {
+    color: var(--mainColor);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Login_Form_right .second_p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.Login_Form_right .name_user,
+.Login_Form_right .name_password {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.Login_Form .name_user input,
+.name_password input {
+    text-align: right;
+    padding: 0.9rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #F3F6F9;
+    font-size: 0.8rem;
+}
+
+.Login_Form .svg_password svg {
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.Login_Form .remove_password {
+    color: #004DC1;
+}
+
+.Login_Form .sub_btn {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: var(--mainColor);
+    font-weight: 700;
+}
+
+.Login_Form .arrow_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ////////////////////////// end login ////////////////// */
+
+/* ////////////////////////// OTP page /////////////////// */
+@media screen and (max-width:1024px) {
+    .OTP_Form .OTP_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+ 
+}
+
+@media screen and (max-width:769px) {
+
+    .OTP_Form .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+@media screen and (max-width:550px) {
+
+    .OTP_Form .OTP_Form_image,
+    .OTP_Form .OTP_Form_right {
+        width: 100% !important;
+    }
+
+    .OTP_Form .OTP_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+    }
+
+    .OTP_Form {
+        flex-direction: column;
+    }
+
+
+} 
+
+
+.OTP_Form .OTP_Form_image {
+    width: 50%;
+}
+
+.OTP_Form .OTP_Form_right {
+    width: 50%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    justify-content: space-between;
+}
+
+.OTP_Form_right h2 {
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.OTP_Form_data {
+    text-align: right;
+}
+
+
+.OTP_Form_right .name_user {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+.OTP_Form .remove_password {
+    color: #004DC1;
+}
+
+.OTP_Form .sub_btn {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: darkgray;
+    font-weight: 700;
+}
+
+  #submitButton.active {
+    background-color: var(--mainColor);
+    color: white;
+  }
+
+.OTP_Form .arrow_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.OTP_Form .OTP_LINK {
+    text-decoration: none;
+    color: black;
+}
+.inputs {
+    text-align: center;
+}
+.input {
+    width: 40px;
+    border: none;
+    background-color: #E0E9F3;
+    border-radius: 0.5rem;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 27px;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:nth-child(1) {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* ////////////////////////// End OTP /////////////////// */
+
+
+@media screen and (max-width:1024px) {
+    .password_Form .password_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+ 
+}
+@media screen and (max-width:769px) {
+
+    .password_Form .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .password_Form .password_Form_image,
+    .password_Form .password_Form_right {
+        width: 100% !important;
+    }
+    .password_Form .password_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+        justify-content: normal !important;
+    }
+
+    .password_Form {
+        flex-direction: column;
+    }
+    .OTP_Form_right {
+        justify-content: normal !important;
+    }
+
+
+}
+
+
+.password_Form .password_Form_image {
+    width: 50%;
+}
+
+.password_Form .password_Form_right {
+    width: 50%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    justify-content: space-between;
+}
+
+.password_Form_right h2 {
+    text-align: center;
+    color: var(--mainColor);
+}
+.password_Form_right p {
+    font-size: 1.3rem;
+}
+.password_Form_data {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+
+.password_Form_right .name_password {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+
+.password_Form .sub_btn {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: var(--mainColor);
+    font-weight: 700;
+}
+
+.password_Form .arrow_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* ///////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:1024px) {
+    .passwordotp_Form .passwordotp_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+ 
+}
+
+@media screen and (max-width:769px) {
+
+    .passwordotp_Form .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+@media screen and (max-width:550px) {
+
+    .passwordotp_Form .passwordotp_Form_image,
+    .passwordotp_Form .passwordotp_Form_right {
+        width: 100% !important;
+    }
+
+    .passwordotp_Form .passwordotp_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+    }
+
+    .passwordotp_Form {
+        flex-direction: column;
+    }
+
+
+} 
+
+
+.passwordotp_Form .passwordotp_Form_image {
+    width: 50%;
+}
+
+.passwordotp_Form .passwordotp_Form_right {
+    width: 50%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    justify-content: space-between;
+}
+
+.passwordotp_Form_right h2 {
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.passwordotp_Form_data {
+    text-align: right;
+}
+
+
+.passwordotp_Form_right .name_user {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+.passwordotp_Form .remove_password {
+    color: #004DC1;
+}
+
+.passwordotp_Form .sub_btn {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: darkgray;
+    font-weight: 700;
+}
+
+  #submitButton.active {
+    background-color: var(--mainColor);
+    color: white;
+  }
+
+.passwordotp_Form .arrow_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.passwordotp_Form .passwordotp_LINK {
+    text-decoration: none;
+    color: black;
+}
+.passwordotp_Form .passwordotp_LINK span {
+    font-size: 0.8rem;
+}
+.inputs {
+    text-align: center;
+}
+.input {
+    width: 40px;
+    border: none;
+    background-color: #E0E9F3;
+    border-radius: 0.5rem;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 27px;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:nth-child(1) {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:1024px) {
+    .newpassword_Form .newpassword_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+ 
+}
+@media screen and (max-width:769px) {
+
+    .newpassword_Form .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .newpassword_Form .newpassword_Form_image,
+    .newpassword_Form .newpassword_Form_right {
+        width: 100% !important;
+    }
+
+    .newpassword_Form .newpassword_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+    }
+
+    .newpassword_Form {
+        flex-direction: column;
+    }
+    .OTP_Form_right {
+        justify-content: normal !important;
+    }
+
+
+}
+
+
+
+.newpassword_Form .newpassword_Form_image {
+    width: 50%;
+}
+
+.newpassword_Form .newpassword_Form_right {
+    width: 50%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+}
+
+.newpassword_Form_right h2 {
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.newpassword_Form_data {
+    text-align: right;
+}
+
+
+.newpassword_Form_right .second_p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+.newpassword_Form_right .name_user,
+.newpassword_Form_right .name_password {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.newpassword_Form .name_user input
+{
+    text-align: right;
+    padding: 0.9rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #F3F6F9;
+    font-size: 0.8rem;
+}
+
+.newpassword_Form .svg_password svg {
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    z-index: 3;
+    cursor: pointer;
+}
+.newpassword_Form .svg_password:focus-visible,
+.newpassword_Form .svg_password input:focus-visible {
+    outline: none;
+}
+.newpassword_Form .svg_password input[type=password]:focus {
+    border: 1px solid #D0D0D0 ;
+}
+
+.newpassword_Form .remove_password {
+    color: #004DC1;
+}
+
+.newpassword_Form .sub_btn {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: var(--mainColor);
+    font-weight: 700;
+}
+
+.newpassword_Form .arrow_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* ////////////////////////////////////////////////////////// */
+
+.newpassword_Form .thank_text {
+    color: var(--mainColor);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.newpassword_Form .thank_text_p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
 }

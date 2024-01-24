@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login OTP </title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+
+    <div>
+        <form action="" method="POST">
+            <div class="d-flex OTP_Form position-relative">
+                <div class="OTP_Form_image">
+                    <img class="left_image" src="./imgs/people.png" alt="">
+                </div>
+                <div class="OTP_Form_right ">
+                    <div class="pt-lg-5">
+                        <h2 class="fw-bold"> مرحبا بك </h2>
+                        <div class="mt-4 OTP_Form_data">
+                            <div class="name_user mb-4">
+                                <label class="label">
+                                    
+                                        <p class="m-0">أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك</p>
+                                        <span>010******12</span>
+                                    
+
+                                </label>
+                                <div id="inputs" class="inputs">
+                                    <input class="input" type="text" 
+                                    id="input1" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text" 
+                                    id="input2" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text"
+                                    id="input3" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text" 
+                                    id="input4" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text" 
+                                    id="input5" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                    <input class="input" type="text" 
+                                    id="input6" oninput="checkInputs()"
+                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                                </div>
+                            </div>
+
+                            
+
+                            <a href="#" class="mt-4 OTP_LINK d-inline-block">
+                                <span>لم تتلق الرمز؟</span>
+                                <u class="remove_password"> إعادة إرسال </u>
+                            </a>
+
+                            <button class="sub_btn mt-5 inactive" type="submit" id="submitButton" value="" disabled> تاكيد </button>
+
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <p>
+                            تصميم وتطوير بواسطة
+                            <img src="./imgs/iconCreations-logo.png" />
+                        </p>
+                    </footer>
+                </div>
+
+                <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
+
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <script src="./dist/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>
