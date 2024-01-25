@@ -155,45 +155,6 @@ table tbody td {
 }
 
 /* //////////////////////// Hello page  //////////////////////////////// */
-@media screen and (max-width:1024px) {
-    .right_side {
-        padding: 0 1rem !important;
-        align-items: center !important;
-    }
-
-}
-
-@media screen and (max-width:769px) {
-
-    .form_content .input {
-        width: 35px !important;
-        margin-bottom: 1rem;
-        margin: 0 2px;
-    }
-}
-
-@media screen and (max-width:550px) {
-
-    .left_side,
-    .right_side {
-        width: 100% !important;
-    }
-
-    .right_side {
-        margin: 1rem 0 0 0;
-        min-height: 40vh;
-    }
-
-    .form_box,
-    .Login_Form {
-        flex-direction: column;
-    }
-
-    .left_image {
-        height: 100% !important;
-    }
-
-}
 
 
 .left_image {
@@ -252,138 +213,12 @@ table tbody td {
     right: 0;
 }
 
-/* ////////////////////////// end login ////////////////// */
-
-/* ////////////////////////// OTP page /////////////////// */
-@media screen and (max-width:1024px) {
-    .OTP_Form .OTP_Form_right {
-        padding: 0 1rem !important;
-        align-items: center !important;
-    }
-
-}
-
-
-
-@media screen and (max-width:550px) {
-
-
-    .OTP_Form .OTP_Form_right {
-        width: 100% !important;
-    }
-
-    .OTP_Form .OTP_Form_right {
-        margin: 1rem 0 0 0;
-        min-height: 40vh;
-    }
-
-    .OTP_Form {
-        flex-direction: column;
-    }
-}
-
 
 #submitButton.active {
     background-color: var(--mainColor);
     color: white;
 }
- 
 
-/* ////////////////////////// End OTP /////////////////// */
-
-
-@media screen and (max-width:1024px) {
-    .password_Form .password_Form_right {
-        padding: 0 1rem !important;
-        align-items: center !important;
-    }
-
-}
-
-
-@media screen and (max-width:550px) {
-
-    .password_Form .password_Form_right {
-        width: 100% !important;
-    }
-
-    .password_Form .password_Form_right {
-        margin: 1rem 0 0 0;
-        min-height: 40vh;
-        justify-content: normal !important;
-    }
-
-    .password_Form {
-        flex-direction: column;
-    }
-
-    .OTP_Form_right {
-        justify-content: normal !important;
-    }
-
-
-}
-
-
-/* ///////////////////////////////////////////////////////////// */
-
-@media screen and (max-width:1024px) {
-    .passwordotp_Form .passwordotp_Form_right {
-        padding: 0 1rem !important;
-        align-items: center !important;
-    }
-
-}
-
-
-@media screen and (max-width:550px) {
-
-    .passwordotp_Form .passwordotp_Form_right {
-        width: 100% !important;
-    }
-
-    .passwordotp_Form .passwordotp_Form_right {
-        margin: 1rem 0 0 0;
-        min-height: 40vh;
-    }
-
-    .passwordotp_Form {
-        flex-direction: column;
-    }
-
-
-}
-
-
-/* /////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width:1024px) {
-    .newpassword_Form .newpassword_Form_right {
-        padding: 0 1rem !important;
-        align-items: center !important;
-    }
-
-}
-
-@media screen and (max-width:550px) {
-
-    .newpassword_Form .newpassword_Form_right {
-        width: 100% !important;
-    }
-
-    .newpassword_Form .newpassword_Form_right {
-        margin: 1rem 0 0 0;
-        min-height: 40vh;
-    }
-
-    .newpassword_Form {
-        flex-direction: column;
-    }
-
-    .OTP_Form_right {
-        justify-content: normal !important;
-    }
-}
 
 .form_group {
     display: flex;
@@ -442,4 +277,115 @@ input:focus {
 
 .form_content a {
     color: var(--lightBlue);
+}
+
+/* MEDIA QUERY */
+
+
+@media screen and (max-width:1024px) {
+    .right_side {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+
+    .OTP_Form .OTP_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+
+    .newpassword_Form .newpassword_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+
+    .passwordotp_Form .passwordotp_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+
+    .password_Form .password_Form_right {
+        padding: 0 1rem !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width:769px) {
+
+    .form_content .input {
+        width: 35px !important;
+        margin-bottom: 1rem;
+        margin: 0 2px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .left_side,
+    .right_side {
+        width: 100% !important;
+    }
+
+    .right_side {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+    }
+
+    .form_box,
+    .Login_Form {
+        flex-direction: column;
+    }
+
+    .left_image {
+        height: 100% !important;
+    }
+
+
+    .OTP_Form .OTP_Form_right {
+        width: 100% !important;
+    }
+ 
+    .OTP_Form {
+        flex-direction: column;
+    }
+
+    .passwordotp_Form .passwordotp_Form_right {
+        width: 100% !important;
+    }
+ 
+
+    .passwordotp_Form {
+        flex-direction: column;
+    }
+
+    .newpassword_Form .newpassword_Form_right {
+        width: 100% !important;
+    }
+
+
+    .newpassword_Form {
+        flex-direction: column;
+    }
+
+    .OTP_Form_right {
+        justify-content: normal !important;
+    }
+
+    .password_Form .password_Form_right {
+        width: 100% !important;
+    }
+
+    .password_Form .password_Form_right {
+        margin: 1rem 0 0 0;
+        min-height: 40vh;
+        justify-content: normal !important;
+    }
+
+    .password_Form {
+        flex-direction: column;
+    }
+
+    .OTP_Form_right {
+        justify-content: normal !important;
+    }
+
 }
