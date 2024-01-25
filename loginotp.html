@@ -12,54 +12,43 @@
 <body>
 
     <div>
-        <form action="" method="POST">
-            <div class="d-flex OTP_Form position-relative">
+             <div class="d-flex OTP_Form position-relative">
                 <div class="left_side">
                     <img class="left_image" src="./imgs/people.png" alt="">
                 </div>
-                <div class="right_side ">
+                <div class="right_side">
                     <div class="pt-lg-5">
                         <h2 class="fw-bold"> مرحبا بك </h2>
                         <div class="mt-4 form_content">
-                            <div class="name_user mb-4">
-                                <label class="label">
-                                    
-                                        <p class="m-0">أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك</p>
-                                        <span>010******12</span>
-                                    
-
-                                </label>
-                                <div id="inputs" class="inputs">
-                                    <input class="input" type="text" 
-                                    id="input1" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text" 
-                                    id="input2" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text"
-                                    id="input3" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text" 
-                                    id="input4" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text" 
-                                    id="input5" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
-                                    <input class="input" type="text" 
-                                    id="input6" oninput="checkInputs()"
-                                        inputmode="numeric" maxlength="1" placeholder=""/>
+                            <form>
+                            <div class="form_group mb-4">
+                                <h4>
+                                    أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك
+                                    <span dir="ltr">010******12</span>
+                                </h4>
+                                <div id="inputs" class=" d-flex justify-content-center gap-3 input-otp">
+                                    <input class="input" type="text" id="input1" oninput="checkInputs()"
+                                        maxlength="1" />
+                                    <input class="input" type="text" id="input2" oninput="checkInputs()"
+                                        maxlength="1" />
+                                    <input class="input" type="text" id="input3" oninput="checkInputs()"
+                                        maxlength="1" />
+                                    <input class="input" type="text" id="input4" oninput="checkInputs()"
+                                        maxlength="1" />
+                                    <input class="input" type="text" id="input5" oninput="checkInputs()"
+                                        maxlength="1" />
+                                    <input class="input" type="text" id="input6" oninput="checkInputs()"
+                                        maxlength="1" />
                                 </div>
                             </div>
 
-                            
-
-                            <a href="#" class="mt-4 OTP_LINK d-inline-block">
-                                <span>لم تتلق الرمز؟</span>
-                                <u class="remove_password"> إعادة إرسال </u>
-                            </a>
+                            <p>
+                                لم تتلق الرمز؟
+                                <a href="#">إعادة إرسال</a>
+                            </p>
 
                             <button class="sub_btn mt-5 inactive" type="submit" id="submitButton" value="" disabled> تاكيد </button>
-
+                            </form>
                         </div>
                     </div>
                     <footer class="footer">
@@ -73,8 +62,7 @@
                 <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
 
             </div>
-        </form>
-
+ 
 
 
     </div>

@@ -12,24 +12,23 @@
 <body>
 
     <div>
-        <form action="" method="POST">
-            <div class="d-flex form_box  Login_Form position-relative">
+             <div class="d-flex form_box  Login_Form position-relative">
                 <div class="left_side">
                     <img class="left_image" src="./imgs/people.png" alt="">
                 </div>
 
 
                 <div class="right_side">
-                    <div class="pt-lg-5">
+                    <div>
                         <h2 class="fw-bold"> مرحبا بك </h2>
 
 
                         <div class="mt-4 form_content">
                             <p class="First_p">تسجيل الدخول</p>
-                            <p class="second_p text-secondary ">إدخل اسم المستخدم وكلمة المرور لتسجيل الدخول</p>
-
-                            <div class="name_user mb-4">
-                                <label class="label ">
+                            <p class="sub_title text-secondary ">إدخل اسم المستخدم وكلمة المرور لتسجيل الدخول</p>
+                            <form>
+                            <div class="form_group mb-4">
+                                <label>
                                     <span class="star text-danger">*</span>
                                     اسم المستخدم
                                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
@@ -48,8 +47,8 @@
 
                             </div>
 
-                            <div class="name_password">
-                                <label class="label ">
+                            <div class="form_group">
+                                <label>
                                     <span class="star text-danger">*</span>
                                     كلمة المرور
                                     <svg onclick="showPassow" width="13" height="15" viewBox="0 0 13 15" fill="none"
@@ -65,7 +64,7 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </label>
-                                <div class="svg_password position-relative">
+                                <div class="show_password position-relative">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -81,12 +80,10 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="mt-4 remove_password d-inline-block">
-                                <u> هل نسيت كلمة المرور </u>
-                            </a>
+                            <a href="#" class="mt-4  d-inline-block">هل نسيت كلمة المرور </a>
 
                             <button class="sub_btn mt-5" type="submit"> تسجيل الدخول </button>
-
+                        </form>
                         </div>
                     </div>
                     <footer class="footer">
@@ -100,8 +97,7 @@
                 <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
 
             </div>
-        </form>
-
+ 
 
 
     </div>

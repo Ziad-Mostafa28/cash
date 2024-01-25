@@ -18,6 +18,7 @@ body {
     --yellow: #FFD66B;
     --orange: #FF8F6B;
     --blue: #233C7A;
+    --lightBlue: #233C7A;
 }
 
 main {
@@ -44,14 +45,6 @@ header {
 
 header h4 span {
     color: var(--mainColor)
-}
-
-.active {
-    /* background-color: var(--mainColor) !important; */
-}
-
-.active svg {
-    /* stroke: #fff !important; */
 }
 
 footer {
@@ -172,7 +165,7 @@ table tbody td {
 
 @media screen and (max-width:769px) {
 
-    .Login_Form .input {
+    .form_content .input {
         width: 35px !important;
         margin-bottom: 1rem;
         margin: 0 2px;
@@ -238,37 +231,10 @@ table tbody td {
     margin: 0;
 }
 
-.right_side .second_p {
+.right_side .sub_title {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
 }
-
-.right_side .name_user,
-.right_side .name_password {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-.Login_Form .name_user input,
-.name_password input {
-    text-align: right;
-    padding: 0.9rem;
-    border-radius: 0.7rem;
-    border: none;
-    background-color: #F3F6F9;
-    font-size: 0.8rem;
-}
-
-.Login_Form .svg_password svg {
-    position: absolute;
-    top: 27%;
-    left: 4%;
-    z-index: 3;
-    cursor: pointer;
-}
-
-
 
 .sub_btn {
     width: 100%;
@@ -297,14 +263,7 @@ table tbody td {
 
 }
 
-@media screen and (max-width:769px) {
 
-    .OTP_Form .input {
-        width: 35px !important;
-        margin-bottom: 1rem;
-        margin: 0 2px;
-    }
-}
 
 @media screen and (max-width:550px) {
 
@@ -324,57 +283,11 @@ table tbody td {
 }
 
 
-.OTP_Form_right h2 {
-    text-align: center;
-    color: var(--mainColor);
-}
-
-
-
-.OTP_Form_right .name_user {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-
-
 #submitButton.active {
     background-color: var(--mainColor);
     color: white;
 }
-
-
-.OTP_Form .OTP_LINK {
-    text-decoration: none;
-    color: black;
-}
-
-.inputs {
-    text-align: center;
-}
-
-.input {
-    width: 40px;
-    border: none;
-    background-color: #E0E9F3;
-    border-radius: 0.5rem;
-    margin: 0 10px;
-    text-align: center;
-    font-size: 27px;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-.input:focus {
-    outline: none;
-}
-
-.input:nth-child(1) {
-    cursor: pointer;
-    pointer-events: all;
-}
-
+ 
 
 /* ////////////////////////// End OTP /////////////////// */
 
@@ -387,14 +300,6 @@ table tbody td {
 
 }
 
-@media screen and (max-width:769px) {
-
-    .password_Form .input {
-        width: 35px !important;
-        margin-bottom: 1rem;
-        margin: 0 2px;
-    }
-}
 
 @media screen and (max-width:550px) {
 
@@ -420,28 +325,6 @@ table tbody td {
 }
 
 
-
-
-.password_Form_right h2 {
-    text-align: center;
-    color: var(--mainColor);
-}
-
-.password_Form_right p {
-    font-size: 1.3rem;
-}
-
-
-
-.password_Form_right .name_password {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-
-
-
 /* ///////////////////////////////////////////////////////////// */
 
 @media screen and (max-width:1024px) {
@@ -452,14 +335,6 @@ table tbody td {
 
 }
 
-@media screen and (max-width:769px) {
-
-    .passwordotp_Form .input {
-        width: 35px !important;
-        margin-bottom: 1rem;
-        margin: 0 2px;
-    }
-}
 
 @media screen and (max-width:550px) {
 
@@ -480,56 +355,6 @@ table tbody td {
 }
 
 
-
-.passwordotp_Form_right h2 {
-    text-align: center;
-    color: var(--mainColor);
-}
-
-
-.passwordotp_Form_right .name_user {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-
-.remove_password {
-    color: #004DC1;
-}
-
-
-#submitButton.active {
-    background-color: var(--mainColor);
-    color: white;
-}
-
-
-.passwordotp_Form .passwordotp_LINK {
-    text-decoration: none;
-    color: black;
-}
-
-.passwordotp_Form .passwordotp_LINK span {
-    font-size: 0.8rem;
-}
-
-.inputs {
-    text-align: center;
-}
-
-.input {
-    width: 40px;
-    border: none;
-    background-color: #E0E9F3;
-    border-radius: 0.5rem;
-    margin: 0 10px;
-    text-align: center;
-    font-size: 27px;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
 /* /////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width:1024px) {
@@ -538,15 +363,6 @@ table tbody td {
         align-items: center !important;
     }
 
-}
-
-@media screen and (max-width:769px) {
-
-    .newpassword_Form .input {
-        width: 35px !important;
-        margin-bottom: 1rem;
-        margin: 0 2px;
-    }
 }
 
 @media screen and (max-width:550px) {
@@ -569,26 +385,20 @@ table tbody td {
     }
 }
 
-.newpassword_Form_right h2 {
-    text-align: center;
-    color: var(--mainColor);
-}
-
-
-.newpassword_Form_right .second_p {
-    font-size: 0.8rem;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
-}
-
-.newpassword_Form_right .name_user,
-.newpassword_Form_right .name_password {
+.form_group {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
-.newpassword_Form .name_user input {
+.form_group label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3px;
+}
+
+.form_content input {
     text-align: right;
     padding: 0.9rem;
     border-radius: 0.7rem;
@@ -597,28 +407,21 @@ table tbody td {
     font-size: 0.8rem;
 }
 
-.newpassword_Form .svg_password svg {
-    position: absolute;
-    top: 27%;
-    left: 4%;
-    z-index: 3;
+.input-otp input {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #E0E9F3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.input:nth-child(1) {
     cursor: pointer;
+    pointer-events: all;
 }
-
-/* ////////////////////////////////////////////////////////// */
-
-.newpassword_Form .thank_text {
-    color: var(--mainColor);
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-
-.newpassword_Form .thank_text_p {
-    font-size: 1rem;
-    margin-top: 1.5rem;
-}
-
 
 input:focus-visible {
     outline: none !important;
@@ -626,4 +429,17 @@ input:focus-visible {
 
 input:focus {
     border: 1px solid #D0D0D0 !important;
+    outline: none;
+}
+
+.show_password svg {
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.form_content a {
+    color: var(--lightBlue);
 }
