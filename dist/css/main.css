@@ -60,10 +60,35 @@ footer p {
 }
 
 /* //////////////////////Dashboard//////////////////////// */
+
+.active {
+    background: none !important;
+}
+
+.active .bg-active {
+    background: var(--mainColor) !important;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+.active .bg-active svg path {
+    stroke: #FFFFFF;
+}
+
+.nav-link.orderActive{
+    border: 0 !important;
+    color: #000000 !important;
+}
+.active.orderActive{
+    border: 0 !important;
+    background-color: var(--mainColor) !important;
+    color: #FFFFFF !important;
+}
 .menu-side {
     box-shadow: 1px 1px 6px 0 hwb(174deg 0% 59% / 20%);
     border-radius: 10px;
     padding: 40px 20px;
+    gap: 30px
 }
 
 .total-order-box {
@@ -87,7 +112,7 @@ footer p {
 }
 
 .default-name {
-    padding: 10px;
+    padding: 6px;
     background-color: var(--mainColor);
     color: #FFFFFF;
     border-radius: 50%;
@@ -139,6 +164,12 @@ table tbody td {
     border-radius: 10px;
     padding: 14px 34px;
 }
+.add-btn:hover{
+    background-color: #FFFFFF !important;
+    color: var(--mainColor) !important;
+    border: 1px solid var(--mainColor) !important;
+
+}
 
 .picker-group {
     padding: 0 1px !important;
@@ -152,6 +183,12 @@ table tbody td {
     background: #E1E1E1 !important;
     padding: 0.375rem 0.75rem !important;
     color: #787878 !important;
+}
+
+
+.branch-table th,
+.branch-table td {
+    background: none;
 }
 
 /* //////////////////////// Hello page  //////////////////////////////// */
@@ -343,7 +380,7 @@ input:focus {
     .OTP_Form .OTP_Form_right {
         width: 100% !important;
     }
- 
+
     .OTP_Form {
         flex-direction: column;
     }
@@ -351,7 +388,7 @@ input:focus {
     .passwordotp_Form .passwordotp_Form_right {
         width: 100% !important;
     }
- 
+
 
     .passwordotp_Form {
         flex-direction: column;
@@ -388,4 +425,65 @@ input:focus {
         justify-content: normal !important;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+.donut {
+    font-size: 12px;
+    line-height: 14px;
+    user-select: none;
+    cursor: default;
+}
+
+.donut .label {
+    fill: whitesmoke;
+    font-size: 10px;
+    pointer-events: none;
+}
+
+.donut .legend text {
+    font-size: 10px;
+    fill: whitesmoke;
+}
+
+.donut .tooltip {
+    position: absolute;
+    padding: 0.5em;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    min-width: 75px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 1px 0px #ccc;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.donut .tooltip p {
+    padding: 0;
+    margin: 5px 0;
+}
+
+
+.modal .btn.cancel{
+    background: #FFFFFF;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+    width: 170px
+}
+.modal .btn.create{
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: #FFFFFF;
+    width: 170px
 }
