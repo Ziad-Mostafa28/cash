@@ -154,10 +154,10 @@ table tbody td {
     color: #787878 !important;
 }
 
-/* //////////////////////// Hello page  //////////////////////////////// */
+/* //////////////////////// login page  //////////////////////////////// */
 
 
-.left_image {
+/* .left_image {
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -165,19 +165,19 @@ table tbody td {
 
 .left_side {
     width: 50%;
-}
+} */
 
 .right_side {
-    width: 50%;
-    padding: 0 10rem;
-    display: flex;
-    flex-direction: column;
+    /* width: 50%; */
+    /* padding: 0 7rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
     margin-top: 6%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .right_side h2 {
-    text-align: center;
+    /* text-align: center; */
     color: var(--mainColor);
 }
 
@@ -221,15 +221,15 @@ table tbody td {
 
 
 .form_group {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     row-gap: 1rem;
 }
 
 .form_group label {
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
     gap: 3px;
 }
 
@@ -240,6 +240,10 @@ table tbody td {
     border: none;
     background-color: #F3F6F9;
     font-size: 0.8rem;
+}
+
+.input-otp {
+    gap: 1rem;
 }
 
 .input-otp input {
@@ -283,10 +287,10 @@ input:focus {
 
 
 @media screen and (max-width:1024px) {
-    .right_side {
+    /* .right_side {
         padding: 0 1rem !important;
         align-items: center !important;
-    }
+    } */
 
     .OTP_Form .OTP_Form_right {
         padding: 0 1rem !important;
@@ -307,14 +311,22 @@ input:focus {
         padding: 0 1rem !important;
         align-items: center !important;
     }
+
 }
 
 @media screen and (max-width:769px) {
+    .input-otp {
+        gap: 0.7rem;
+    }
 
     .form_content .input {
         width: 35px !important;
+        height: 35px !important;
         margin-bottom: 1rem;
         margin: 0 2px;
+    }
+    .form_group h4 {
+        font-size: 1rem;
     }
 }
 
@@ -343,7 +355,7 @@ input:focus {
     .OTP_Form .OTP_Form_right {
         width: 100% !important;
     }
- 
+
     .OTP_Form {
         flex-direction: column;
     }
@@ -351,7 +363,7 @@ input:focus {
     .passwordotp_Form .passwordotp_Form_right {
         width: 100% !important;
     }
- 
+
 
     .passwordotp_Form {
         flex-direction: column;
