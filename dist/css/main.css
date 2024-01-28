@@ -241,7 +241,9 @@ table tbody td {
     background-color: #F3F6F9;
     font-size: 0.8rem;
 }
-
+.inactive {
+    background-color: #DCDCDC;
+}
 .input-otp {
     gap: 1rem;
 }
