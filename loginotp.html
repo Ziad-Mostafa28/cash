@@ -12,62 +12,63 @@
 <body>
 
     <div>
-            <div class="d-flex OTP_Form position-relative">
-               <div class="row w-100 m-0 p-0 " style="height: 100vh;">
-                <div class="left_side col-md-6 col-sm-12 p-0">
-                    <img class="left_image w-100 h-100 object-fit-cover" src="./imgs/people.png" alt="">
+        <div class="row w-100 m-0">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0">
+                <div class="h-100">
+                    <img src="./imgs/people.png" alt="" class="auth-img w-100" />
                 </div>
-                <div class="right_side col-md-6 col-sm-12 align-items-center align-items-lg-normal flex-column d-flex
-                justify-content-sm-between">
-                    <div class="pt-lg-5 w-75">
-                        <h2 class="fw-bold text-center"> مرحبا بك </h2>
-                        <div class="mt-4 form_content text-end">
-                            <form>
-                            <div class="form_group mb-4 d-flex flex-column">
-                                <h4>
-                                    أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك
-                                    <span dir="ltr">010******12</span>
-                                </h4>
-                                <div id="inputs" class=" d-flex justify-content-center  input-otp">
-                                    <input class="input" type="text" id="input1" oninput="checkInputs()"
-                                        maxlength="1" />
-                                    <input class="input" type="text" id="input2" oninput="checkInputs()"
-                                        maxlength="1" />
-                                    <input class="input" type="text" id="input3" oninput="checkInputs()"
-                                        maxlength="1" />
-                                    <input class="input" type="text" id="input4" oninput="checkInputs()"
-                                        maxlength="1" />
-                                    <input class="input" type="text" id="input5" oninput="checkInputs()"
-                                        maxlength="1" />
-                                    <input class="input" type="text" id="input6" oninput="checkInputs()"
-                                        maxlength="1" />
-                                </div>
-                            </div>
-
-                            <p>
-                                لم تتلق الرمز؟
-                                <a href="#">إعادة إرسال</a>
-                            </p>
-
-                            <button class="sub_btn mt-5 inactive" type="submit" id="submitButton" value="" disabled> تاكيد </button>
-                            </form>
-                        </div>
-                    </div>
-                    <footer class="footer">
-                        <p>
-                            تصميم وتطوير بواسطة
-                            <img src="./imgs/iconCreations-logo.png" />
-                        </p>
-                    </footer>
-                </div>
-               </div>
-
-                <img class="arrow_image position-absolute end-0 bottom-0" src="./imgs/Group 39596.png" alt="">
-
             </div>
- 
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 position-relative">
+                <div class="position-absolute end-0 bottom-0">
+                    <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
+                </div>
 
 
+
+                <div class="box_content">
+                    <h2 class="fw-bold text-center  mainColor fs-1"> مرحبا بك </h2>
+                    <div class="mt-4 form_content text-end">
+                        <form>
+                        <div class="form_group mb-4 d-flex flex-column mt-5">
+                            <h4 class="fs-4 lh-base">
+                                أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك
+                                
+                                <span class="fs-5" dir="ltr">010******12</span>
+                            </h4>
+                            <div id="inputs" class=" d-flex justify-content-center  input-otp">
+                                <input class="input" type="text" id="input1" oninput="checkInputs()"
+                                    maxlength="1" />
+                                <input class="input" type="text" id="input2" oninput="checkInputs()"
+                                    maxlength="1" />
+                                <input class="input" type="text" id="input3" oninput="checkInputs()"
+                                    maxlength="1" />
+                                <input class="input" type="text" id="input4" oninput="checkInputs()"
+                                    maxlength="1" />
+                                <input class="input" type="text" id="input5" oninput="checkInputs()"
+                                    maxlength="1" />
+                                <input class="input" type="text" id="input6" oninput="checkInputs()"
+                                    maxlength="1" />
+                            </div>
+                        </div>
+
+                        <p>
+                            لم تتلق الرمز؟
+                            <a href="#">إعادة إرسال</a>
+                        </p>
+
+                        <button class="sub_btn mt-5 inactive" type="submit" id="submitButton" value="" disabled> تاكيد </button>
+                        </form>
+                    </div>
+                </div>
+
+                <footer class="position- bottom-0 start-0 end-0">
+                    <p>
+                        تصميم وتطوير بواسطة
+                        <img src="./imgs/iconCreations-logo.png" alt="" />
+                    </p>
+                </footer>
+            </div>
+        </div>
     </div>
 
     <script src="./dist/js/jquery-3.3.1.slim.min.js"></script>

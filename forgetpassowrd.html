@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> update password </title>
+    <title> forget password </title>
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 
 <body>
 
-    <div>
-         <div class="d-flex password_Form position-relative">
-           <div class="row w-100 m-0 p-0" style="height: 100vh;">
-            <div class="left_side col-md-6 col-sm-12 p-0">
-                <img class="left_image w-100 h-100 object-fit-cover" src="./imgs/people.png" alt="">
+<div>
+        <div class="row w-100 m-0">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0">
+                <div class="h-100">
+                    <img src="./imgs/people.png" alt="" class="auth-img w-100" />
+                </div>
             </div>
-            <div class="right_side col-md-6 col-sm-12 align-items-center align-items-lg-normal flex-column d-flex
-            justify-content-sm-between
-            ">
-                <div class="pt-lg-5 w-75">
-                    <h2 class="fw-bold text-center"> تغيير كلمة المرور </h2>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 position-relative">
+                <div class="position-absolute end-0 bottom-0">
+                    <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
+                </div>
+
+
+
+                <div class="box_content">
+                    <h2 class="fw-bold text-center mainColor fs-1"> تغيير كلمة المرور </h2>
                     <div class="form_content mt-5 text-end">
                         <p> قم بادخال رقم هاتفك المسجل </p>
                         <form>
@@ -39,7 +44,7 @@
                                 </label>
                                 <div class="svg_password position-relative">
 
-                                    <input class="w-100" type="number" name="number" id="number"
+                                    <input class="w-100" type="tel" name="number" id="number"
                                         placeholder="ادخل رقم الهاتف" required>
                                 </div>
                             </div>
@@ -48,21 +53,15 @@
                         </form>
                     </div>
                 </div>
-                <footer class="footer">
+
+                <footer class="position- bottom-0 start-0 end-0">
                     <p>
                         تصميم وتطوير بواسطة
-                        <img src="./imgs/iconCreations-logo.png" />
+                        <img src="./imgs/iconCreations-logo.png" alt="" />
                     </p>
                 </footer>
             </div>
-           </div>
-
-            <img class="arrow_image" src="./imgs/Group 39596.png" alt="">
-
         </div>
- 
-
-
     </div>
 </body>
 
