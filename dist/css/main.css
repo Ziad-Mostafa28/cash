@@ -75,15 +75,17 @@ footer p {
     stroke: #FFFFFF;
 }
 
-.nav-link.orderActive{
+.nav-link.orderActive {
     border: 0 !important;
     color: #000000 !important;
 }
-.active.orderActive{
+
+.active.orderActive {
     border: 0 !important;
     background-color: var(--mainColor) !important;
     color: #FFFFFF !important;
 }
+
 .menu-side {
     box-shadow: 1px 1px 6px 0 hwb(174deg 0% 59% / 20%);
     border-radius: 10px;
@@ -132,6 +134,9 @@ table tbody td {
     font-size: 9px;
     margin: 0;
 }
+.bg-transparent tbody tr td{
+    background: inherit;
+}
 
 .order-type-item:nth-child(1) span {
     background-color: var(--green);
@@ -162,9 +167,10 @@ table tbody td {
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
-    padding: 14px 34px;
+    padding: 9px 17px;
 }
-.add-btn:hover{
+
+.add-btn:hover {
     background-color: #FFFFFF !important;
     color: var(--mainColor) !important;
     border: 1px solid var(--mainColor) !important;
@@ -304,7 +310,7 @@ input:focus {
     outline: none;
 }
 
-.show_password svg {
+.icon-input img {
     position: absolute;
     top: 27%;
     left: 4%;
@@ -314,6 +320,15 @@ input:focus {
 
 .form_content a {
     color: var(--lightBlue);
+}
+
+.input-search {
+    padding: 9px 17px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    width: 230px !important;
+    height: 40px;
 }
 
 /* MEDIA QUERY */
@@ -475,13 +490,14 @@ input:focus {
 }
 
 
-.modal .btn.cancel{
+.modal .btn.cancel {
     background: #FFFFFF;
     border: 1px solid var(--mainColor);
     color: var(--mainColor);
     width: 170px
 }
-.modal .btn.create{
+
+.modal .btn.create {
     background: var(--mainColor);
     border: 1px solid var(--mainColor);
     color: #FFFFFF;

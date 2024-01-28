@@ -253,7 +253,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -275,7 +275,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -297,7 +297,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -319,7 +319,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -341,7 +341,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -363,7 +363,7 @@
                                                     <div class="d-flex gap-2">
                                                         <div class="default-name">م م</div>
                                                         <div>
-                                                            <p class="m-0 text-end">الاسم</p>
+                                                            <p class="m-0 text-end">اسم الفرع</p>
                                                             <p class="m-0 text-end">name brunch@gmail.com</p>
                                                         </div>
                                                     </div>
@@ -481,7 +481,7 @@
                     <div class="tab-pane fade" id="v-pills-branch" role="tabpanel" aria-labelledby="v-pills-branch-tab">
                         <!-- If there is No Branch  -->
 
-                        <div class="d-flex justify-content-center align-items-center flex-column gap-3">
+                        <!-- <div class="d-flex justify-content-center align-items-center flex-column gap-3">
                             <img src="./imgs/no-file.png" alt="no file image" />
                             <h3>لا توجد فروع مضافة بعد!</h3>
                             <button class="add-btn btn" type="button" data-bs-toggle="modal"
@@ -489,17 +489,20 @@
                                 اضافة فرع جديد
                                 <img src="./imgs/icons/plus-sign.png" />
                             </button>
-                        </div>
+                        </div> -->
 
-                        <!-- <div>
-                            <div class="d-flex justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between mb-3">
                                 <h3 class="fw-bold">قائمة الفروع</h3>
                                 <div class="d-flex align-items-center gap-2">
-                                    <div class="position-relative">
-                                        <input type="text" placeholder="بحث" />
-                                        <img src="./imgs/icons/search.png" class="position-absolute" />
-                                    </div>
-                                    <button class="add-btn">
+                                    <form>
+                                        <div class="icon-input position-relative">
+                                            <img src="./imgs/icons/search.png" />
+                                            <input type="text" placeholder="بحث" class="input-search" />
+                                        </div>
+                                    </form>
+                                    <button class="add-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#createBranchModal">
                                         انشاء فرع جديد
                                         <img src="./imgs/icons/plus-sign.png" />
                                     </button>
@@ -508,12 +511,16 @@
                             <table class="table branch-table">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="fw-normal text-center">اسم طالب التمويل</th>
-                                        <th scope="col" class="fw-normal text-center">رقم التيليفون </th>
-                                        <th scope="col" class="fw-normal text-center">نوع التمويل</th>
-                                        <th scope="col" class="fw-normal text-center">نوع النشاط</th>
-                                        <th scope="col" class="fw-normal text-center">حالة الطلب</th>
-                                        <th scope="col" class="fw-normal text-center">الاجراءات</th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">اسم الفرع</th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">موقع الفرع
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">عنوان الفرع
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">تاريخ الاضافة
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">المستخدمين
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">الاجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -522,15 +529,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -544,15 +551,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -566,15 +573,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -588,15 +595,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -610,15 +617,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -632,15 +639,15 @@
                                             <div class="d-flex gap-2">
                                                 <div class="default-name">م م</div>
                                                 <div>
-                                                    <p class="m-0 text-end">الاسم</p>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
                                                     <p class="m-0 text-end">name brunch@gmail.com</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>01234567891</td>
-                                        <td>متناهي الصغر</td>
-                                        <td>20.00ج.م</td>
-                                        <td>تم القبول</td>
+                                        <td>المعادي</td>
+                                        <td>شارع ,حي ,مدينه ,محافظه</td>
+                                        <td>20/09/2022</td>
+                                        <td>المستخدمين</td>
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center gap-2">
                                                 <img src="./imgs/icons/view.png" />
@@ -651,7 +658,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div> -->
+                        </div>
                     </div>
 
 
@@ -671,7 +678,189 @@
 
 
                     <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">
-                        .1</div>
+                        <div>
+                            <h3 class="fw-bold">قائمة الطلبات التمويل</h3>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="icon-input position-relative">
+                                        <img src="./imgs/icons/search.png" />
+                                        <input type="text" placeholder="كلمات داله" class="input-search" />
+                                    </div>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <h6>الفترة الزمنية</h6>
+                                    <div class="input-daterange input-group picker-group d-flex align-items-center border rounded"
+                                        id="datepicker">
+                                        <input type="text" class="input-sm form-control border-0 rounded-end"
+                                            name="startDate" placeholder="YYYY-MM-DD" />
+                                        <span class="input-group-addon bg-secondary py-1 px-2 rounded">الي</span>
+                                        <input type="text" class="input-sm form-control border-0 rounded-start"
+                                            name="endDate" placeholder="YYYY-MM-DD" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6>مبلغ التمويل</h6>
+                                    <div class="input-daterange input-group picker-group d-flex align-items-center border rounded"
+                                        id="datepicker">
+                                        <input type="text" class="input-sm form-control border-0 rounded-end"
+                                            name="startDate" placeholder="20,000 ج.م" />
+                                        <span class="input-group-addon bg-secondary py-1 px-2 rounded">الي</span>
+                                        <input type="text" class="input-sm form-control border-0 rounded-start"
+                                            name="endDate" placeholder="150,000 ج.م" />
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+
+                            <table class="table bg-transparent">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">اسم طالب
+                                            التمويل</th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">رقم التيليفون
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">نوع التمويل
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">تاريخ الطلب
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">فرع</th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">حالة الطلب
+                                        </th>
+                                        <th scope="col" class="fw-normal text-center bg-secondary-subtle">الاجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">
+                                            <div class="d-flex gap-2">
+                                                <div class="default-name">م م</div>
+                                                <div>
+                                                    <p class="m-0 text-end">اسم الفرع</p>
+                                                    <p class="m-0 text-end">name brunch@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01234567891</td>
+                                        <td>متناهي الصغر</td>
+                                        <td>1/1/2024 3:00pm</td>
+                                        <td>اسم الفرع</td>
+                                        <td>تم القبول</td>
+                                        <td>
+                                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                                <img src="./imgs/icons/view.png" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
 
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
@@ -701,7 +890,7 @@
                                                     stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </label>
-                                        <div class="show_password position-relative">
+                                        <div class="icon-input position-relative">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -732,7 +921,7 @@
                                                     stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </label>
-                                        <div class="show_password position-relative">
+                                        <div class="icon-input position-relative">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
